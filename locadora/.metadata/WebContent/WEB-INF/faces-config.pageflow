@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14097073155100" configfile="/locadora/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="pages/categoria/categoriaManter.xhtml" id="pf14097079072401" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" outlinks="pf14097079072402 pf14097955001340" inlinks="pf14097097375316 pf14097955001340" path="pages/categoria/categoriaManter.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/categoria/categoriaManter.xhtml" id="pf14097079072401" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" outlinks="pf14097079072402 pf14097955001340" inlinks="pf14097097375316 pf14097955001340" path="pages/categoria/categoriaManter.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="pages/categoria/categoriaIncluirAlterar.xhtml" id="pf14097079072403" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14097097375316" inlinks="pf14097079072402" path="pages/categoria/categoriaIncluirAlterar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/empresa/empresaManter.xhtml" id="pf14115231726990" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" outlinks="pf14116103445943 pf14116103490545" inlinks="pf14116103490545 pf14116104126556" path="pages/empresa/empresaManter.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="pages/empresa/empresaIncluirAlterar.xhtml" id="pf14116103445954" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf14116104126556" inlinks="pf14116103445943" path="pages/empresa/empresaIncluirAlterar.xhtml"/>
   <links id="pf14097079072402" target="pf14097079072403" source="pf14097079072401" outcome="exibirFormulario" redirect="true"/>
   <links id="pf14097097375316" target="pf14097079072401" source="pf14097079072403" outcome="listar" redirect="true"/>
   <links id="pf14097955001340" target="pf14097079072401" source="pf14097079072401" outcome="listar" redirect="true"/>
+  <links id="pf14116103445943" target="pf14116103445954" source="pf14115231726990" outcome="exibirFormulario" redirect="true"/>
+  <links id="pf14116103490545" target="pf14115231726990" source="pf14115231726990" outcome="listar" redirect="true"/>
+  <links id="pf14116104126556" target="pf14115231726990" source="pf14116103445954" outcome="listar" redirect="true"/>
 </pageflow:Pageflow>
